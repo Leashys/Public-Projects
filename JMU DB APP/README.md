@@ -1,6 +1,6 @@
 # JMU Database App
 
-This is an example Flask app, revised to remove university-dependent database access. Uses flask & flask-bootstrap.
+This is an example Flask app, revised to remove university-dependent database access. Requires a python3 venv running flask & flask-bootstrap.
 
 
 ## Usage
