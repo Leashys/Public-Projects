@@ -1,0 +1,323 @@
+<html>
+<title>JMU Course Explorer</title>
+    <head>
+      <script src="static/js/jquery.min.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+      <script src="static/js/jquery.easing.min.js"></script>
+      <script src="static/js/scrolling-nav.js"></script>
+
+      <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+      <link href="static/css/custom.css" rel="stylesheet" type="text/css" media="screen">
+
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Source+Sans+Pro:600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Arimo:700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    
+      <style>
+      @media only screen and (max-width: 1600px) {
+      .carousel-caption {
+        margin-bottom: 14%;
+        width: 70%;
+      }
+      .card {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      .carousel-caption {
+        margin-bottom: 12%;
+      }
+
+      .carousel-caption h5 {
+        font-size: 30px;
+      }
+
+      .carousel-caption p {
+        font-size: 16px;
+      }
+
+      .card {
+        width: 80%;
+      }
+    }
+
+    @media only screen and (max-width: 960px) {
+      .carousel-caption {
+        margin-bottom: 0%;
+      }
+
+      .c3 {
+        margin-bottom: 7%;
+      }
+
+      .card {
+        width: 70%;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .carousel-caption {
+        margin-bottom: 5%;
+        padding: 25px;
+      }
+
+      .carousel-caption h5 {
+        font-size: 20px;
+      }
+
+      .carousel-caption p {
+        font-size: 12px;
+      }
+
+      .card {
+        width: 70%;
+      }
+
+    }
+    
+        .padding-0 {
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+    
+        li {
+          color: #151515;
+        }
+    
+        a {
+          color: black;
+          transition: .7s ease;
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+        }
+    
+        h1 {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          margin-top: 25px;
+          margin-left: 70px;
+          margin-right: 20px;
+          margin-bottom: 25px;
+          font-weight: 600;
+          color: #472b7f;
+        }
+    
+        h2 {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 30px;
+          margin-top: 25px;
+          margin-left: 70px;
+          margin-right: 20px;
+          margin-bottom: 25px;
+          font-weight: 600;
+          color: #AD9C65;
+          text-decoration: underline;
+        }
+    
+        h3 {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          color: #ffffff;
+        }
+    
+        h5 {
+          color: #472b7f;
+        }
+    
+        .margin-list {
+          padding-left: 66px;
+          padding-right: 60px;
+        }
+    
+        p {
+          color: black;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+        }
+    
+        .margin-row {
+          margin-top: 25px;
+          margin-left: 55px;
+          margin-right: 70px;
+          margin-bottom: 25px;
+        }
+    
+        .padding-card-img {
+          margin-top: 40px;
+          margin-bottom: 40px;
+        }
+    
+        .padding-card-txt {
+          align-items: center;
+        }
+    
+        .background-div {
+          background-color: #eae8eb;
+        }
+      </style>
+    </head>
+
+    <body>
+      
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img src="static/images/jmu-logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/"><b>About</b></a>
+        <a class="nav-item nav-link" href="/programs">Programs</a>
+        <a class="nav-item nav-link" href="/courses">Explore Courses</a>
+      </div>
+    </div>
+  </nav>
+<!-- End Navbar-->
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="static/images/about1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="static/images/football-sm1.jpg" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- End Carousel-->
+
+<div class="row background-div">
+  <!-- Start Row1 -->
+  <div class="container col-lg-8 padding-card-txt">
+    <div class="card mx-auto" style="border: none;">
+      <div class="card-body mx-auto background-div">
+        <h5 class="card-title">Who We Are</h5>
+        <p class="card-text">
+          Founded in 1908, James Madison University is a public university located in Virginia’s Shenandoah
+          Valley. JMU is fast becoming one of the nation’s leading lights in higher education because students
+          enjoy unusually engaged relationships with world-class faculty who are here because they want to
+          pursue knowledge and make teaching their No. 1 priority.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-lg-4 text-center padding-card-img">
+    <div class="card mx-auto">
+      <img src="static/images/clasroom2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>JMU Classroom in Duke Hall</b></p>
+      </div>
+    </div>
+  </div>
+</div> <!-- End Row1 -->
+
+<!-- Start Row2 -->
+<div class="row">
+  <div class="container col-lg-4 text-center padding-card-img">
+    <div class="card mx-auto">
+      <img src="static/images/learning2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>JMU Engaged Learning</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-lg-8 padding-card-txt">
+    <div class="card mx-auto" style="border: none;">
+      <div class="card-body">
+        <h5 class="card-title">Academics at JMU</h5>
+        <p class="card-text">
+          The common thread that weaves itself through every facet of the Madison Experience
+          is this—you will be pushed, helped and groomed for success.
+          From day one to graduation, we are here to help you work harder than you have
+          imagined, learn new things about the world around you and, perhaps most importantly,
+          learn new things about yourself. With more than 130 degree programs, there is
+          plenty to explore.
+        </p>
+        <a href="/courses" class="card-link">Find Your Program -></a>
+      </div>
+    </div>
+  </div>
+</div> <!-- End Row2 -->
+
+ <!-- Start Row3 -->
+<div class="row background-div">
+  <div class="container col-lg-8 padding-card-txt">
+    <div class="card background-div mx-auto" style="border: none;">
+      <div class="card-body mx-auto">
+        <h5 class="card-title">Rankings & Recognitions</h5>
+        <p class="card-text">
+          <p>
+            #1 Best College for Employment in Virginia according to U.S.
+            Department of Education statistics compiled by Zippia.
+            JMU has the highest post-graduation job levels of all Virginia colleges.
+          </p>
+          <p>
+            #25 best public college value in the U.S. by MONEY magazine
+          </p>
+          <p>
+            96% of 2018 JMU graduates were employed, in graduate school or
+            involved in other career endeavors within six months of graduation
+          </p>
+        </p>
+        <a href="/courses" class="card-link">Explore Courses at JMU -></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-lg-4 text-center padding-card-img">
+    <div class="card mx-auto" style="border: none;">
+      <img src="static/images/learning-rank.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text"><b>JMU Physics</b></p>
+      </div>
+    </div>
+  </div>
+</div> <!-- End Row3 -->
+
+<div class="row">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/images/options.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-sm-block">
+          <h3>See all courses</h3>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <a href="/courses" class="btn btn-outline-light" role="button">Credits</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer id="sticky-footer" class="py-4 bg-light text-white-50">
+  <div class="container text-center">
+    <p style="font-size: 14px;">800 SOUTH MAIN STREET <br>
+      HARRISONBURG, VA 22807 <br>
+      <a href="#" style="font-size: 14px;">CONTACT US</a></p>
+  </div>
+</footer>
+
+

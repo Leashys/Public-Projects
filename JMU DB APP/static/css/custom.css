@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+.padding-0{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+li {
+    color: #151515;
+}
+a {
+    color: black;
+    transition: .7s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #472b7f;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #AD9C65;
+    text-decoration: underline;
+}
+
+.margin-list {
+    padding-left: 66px;
+    padding-right: 60px;
+}
+
+p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.margin-row {
+    margin-top: 25px;
+    margin-left: 55px;
+    margin-right: 70px;
+    margin-bottom: 25px;
+}
